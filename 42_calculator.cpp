@@ -64,7 +64,7 @@ class hybridcalculator : public scientificcalculator
         cout<<"Enter the second no "<<endl;
         cin>>n2;
         cout<<"Enter the operation "<<endl;
-        cin>>S;
+        cin>>S;         // jjjdddjd hdhd dudjjdj jdfd jjde jjd jjd
         simplecalc(S);
         seientificclac(S);
     }

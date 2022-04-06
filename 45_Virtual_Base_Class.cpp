@@ -47,7 +47,7 @@ public:
     {
         cout << "your pt score is " << score << endl;
     }
-};
+}; 
 class result : public test, public sport
 {
 protected:
@@ -73,7 +73,7 @@ int main()
     abhi.Setdata(44);
     abhi.set_number(45, 65);
     abhi.set_score(65);
-    // abhi.calc_total();
+    // abhi.calc_total();   
     abhi.final_print();
 
     return 0;
@@ -82,7 +82,7 @@ int main()
 /*x
 Virtual Base class syntex
 
-class {{class name }} : virtual {{visibility mode}} {{derived class}}
+class {{class name }} : virtual {{visibility mode}} {{derived  class}}
 
 virtual base class iss liye hmlog bnte hai becouse 
 original base class ka data agr 2 drived class se hote hue 

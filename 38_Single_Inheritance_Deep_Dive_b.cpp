@@ -29,7 +29,7 @@ yha pe hmlog derived class ko private byege iske liye
 hmklog ko setdata function ko 
 dreived class ke process function ke andr call krna pdega 
 */
-class derived : public base {               // class is being derived in publically visibility mode   
+class derived : private base {               // class is being derived in publically visibility mode   
 
     int data3;
     public:

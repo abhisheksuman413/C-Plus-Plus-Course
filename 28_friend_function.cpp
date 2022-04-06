@@ -11,7 +11,7 @@ class x
     void display(void){
         cout<<val1<<endl;
     }
-    friend void swap(x&,y&);
+    friend void swap(x &,y &);
 };
 class y
 {
@@ -36,7 +36,12 @@ int main()
     y c2;
 
     c1.intdata(5123);
+    cout<<"the value before display";
+    c1.display();
+
     c2.intdata(1231);
+    cout<<"the value before display";
+    c2.display();
     
     swap(c1,c2);
     

@@ -6,7 +6,7 @@ int & swapreference( int &a, int &b){
     int tem = a;                           
     a=b;                   
     b=tem;   
-    return a;              
+    return  a;              
 }
 
 int main()
@@ -14,7 +14,7 @@ int main()
     int x=4, y=8;
     cout<<"the value of x is :-"<<x<<endl;
     cout<<"the value of y is :-"<<y<<endl;
-    swapreference(x,y)=6555;                                  
+    swapreference(x,y)=6555;                              
     cout<<"the value of x is :-"<<x<<endl;                  
     cout<<"the value of y is :-"<<y<<endl;          
     return 0;

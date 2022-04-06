@@ -58,11 +58,14 @@ void binery ::display(void)
 }
 int main()
 {
-    binery c;
+    binery c , d;
     c.read();
     //c.cheack_bin();  isko uper me v call kr skte hai function ke niche >> private krne ke bad isko niche khi vi use nhi kr skte 
     c.display();
     c.change();
     c.display();
+    d.read();
+    d.display();
+    d.change();
     return 0;
 }

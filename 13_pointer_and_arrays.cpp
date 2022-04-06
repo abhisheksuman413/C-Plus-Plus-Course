@@ -4,7 +4,7 @@ using namespace std;
 int main()
 {
     int marks[] = {32,65,98,74,56,15,19};
-    int*a = marks;                                   //yha ham arrays ka value ko poi8nter me dal rhe hai 
+    int*a = marks;                                   //yha ham arrays ka value ko pointer me dal rhe hai 
  cout<<"the value of p is"<<*a<<endl;
  cout<<"the value of p is"<<*(a+1)<<endl;
  cout<<"the value of p is"<<*(a+2)<<endl;

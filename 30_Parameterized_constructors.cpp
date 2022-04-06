@@ -23,7 +23,7 @@ x :: x(int x , int y)    // << isko Parameterize constructor bolte hai
 
 int main()
 {
-    x p(5, 56);        // implicit call
+    x  p(5, 56);        // implicit call
     p.print();
 
     x q = x(445,1231);  // explicit call 

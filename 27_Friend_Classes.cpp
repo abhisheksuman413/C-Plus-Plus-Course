@@ -1,7 +1,7 @@
 #include <iostream>
 using namespace std;
 
-class complex; // its aforward declaration for upcoming complex class.
+class complex; // its a forward declaration for upcoming complex class.
 
 class calculator
 {
@@ -15,10 +15,12 @@ public:
 class complex
 {
     int a, b;
-    // friend int calculator ::sumrealcomplex(complex, complex);
-    // friend int calculator ::sumcompcomplex(complex, complex);
+    // friend int calculator ::sumrealcomplex(complex, complex);  >>  ye function hai <<<
+    // friend int calculator ::sumcompcomplex(complex, complex);  >>   ye function hai  <<<
     //  if there are more function you can just make whole function as a friend
-    friend class calculator;
+    // sare function ko friend bnane ke liye ham calss ko hi friend bna dege  syntex niche hai
+    friend class calculator;  // yha ham calculator class ko friend bna rhe hai 
+                            // iss se complex classe ke sare function ko access mil jyega 
 
 public:
     void setnumber(int n1, int n2)

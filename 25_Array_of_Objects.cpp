@@ -34,7 +34,7 @@ int main()
         fireman[a].setdeta(); // yha pe objet arrey ko loop me chla rhe hai
         fireman[a].getdeta();
         // fireman[a].payment();           // array ko hmlog iss trh se call krte hai
-        // uper me function bnte hai to yha call krna pdega
+        // uper me function bnte hai to yha iss trh se  call krna pdega
     }
     return 0;
 }

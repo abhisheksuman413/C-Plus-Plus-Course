@@ -28,7 +28,7 @@ void worker ::getdeta(void)
     cout << "the id of employ is " << id << "  and ists employ no is " << count << endl;
 }
 
-int worker ::count = 1000;
+int worker ::count = 1000;  // yha count ko set kr rhe hai >> agr yha se 1000 hta dete hai to value 0 ho jyega
 int main()
 {
    
@@ -36,7 +36,7 @@ int main()
     abhi.setdeta();
     abhi.getdeta();
     worker :: getcount();     // static function ko calss ke sath  scoprezeloution use krte hai
-                             // isme objet ke sathy use nhi krte hai 
+                             // isme objet ke sath use nhi krte hai 
 
     suman.setdeta();
     suman.getdeta();
