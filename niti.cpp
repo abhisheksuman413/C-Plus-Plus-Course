@@ -3,6 +3,10 @@ using namespace std;
 
 int main()
 {
-    cout<<"31313441"<<endl;
+    int a=4;
+ int *ptr =&a;
+    *ptr=55;
+    cout<<*(&a)<<endl;
+    cout<<*(ptr);;
     return 0;
 }
