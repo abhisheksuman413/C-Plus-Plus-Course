@@ -1,1 +1,2 @@
- // abhi.calc_total();
+
+    BaseClass *base_class_pointer;

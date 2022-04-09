@@ -25,11 +25,12 @@ int main()
     int size = 3;
     shopitem *abhi = new shopitem[size]; // yha hmne arrey bnya
 
-    shopitem *abhi2 = abhi; /* yha ham isko is liye bna rhe hai kuy ki jb ham
+    shopitem *abhi2 = abhi; /* >>> Iterate  <<< yha ham isko is liye bna rhe hai kuy ki jb ham
                              niche for loop chla rhe hai to abhi++ ki wjh se
                             size ke bhr chle ja rhe hai or ham agr getdata v wahi start
                             kre to grabage value dega isliye hamlog *abhi2=abhi kiye is se
-                            abhi to 3 ke bhr rhega but abhi2 to 0 se satart hoga
+                            abhi to 3 ke bhr rhega but abhi2 to 0 se satart hoga  iss process
+                            ko iterate bole tha hai or *abhi2 ko iterator bolege
                             ya fir niche comment wala method use kr skte hai
                          */
     int i, q;
@@ -76,4 +77,4 @@ int main()
     }
 
 
-*/
+..*/

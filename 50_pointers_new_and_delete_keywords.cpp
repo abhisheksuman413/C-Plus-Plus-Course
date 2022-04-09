@@ -15,8 +15,11 @@ int main()
 
     cout<<"the value at adress p is "<<*p<<endl;
 
+    
+    // int *arr =new int[3];    //array ke liye yha hmlog bracket me change kiye hai yha hmlog square bracket use kiye hai
 
-    int *arr = new int[3];     //array ke liye yha hmlog bracket me change kiye hai yha hmlog square bracket use kiye hai 
+    int ji[3];     //uper wale ko ase v likh skte hai static way me 
+    int *arr=ji;
 
     arr[0]=11;
     // arr[1]=21;   >>> iske niche jse likhe hai ase v likh skte hai 
