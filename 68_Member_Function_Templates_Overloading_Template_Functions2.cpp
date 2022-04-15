@@ -18,6 +18,6 @@ int main()
 
     func("abhishek");   /*  yha exact match nhi kiya kuy ki yha hmlog string vej rhe hai
                             iss liye yha pe >>> I am templatesid function << call hua  
-                            isi ko overloding template function bolte hai     */
+                            isi ko overloding template function bolte      */
     return 0;
 }
