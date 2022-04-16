@@ -2,7 +2,8 @@
 #include <vector>
 using namespace std;
 
-void display(vector<int> &v)   // yha hmlog reference le rhe hai 
+template <class t>
+void display(vector<t> &v)   // yha hmlog reference le rhe hai 
 {
     for (int i = 0; i < v.size(); i++)
     {
@@ -43,6 +44,31 @@ int main()
     }
     abhi.pop_back();  // iss se last wale element ko delete kr dta hai 
     display(abhi);
+
+    vector<char>abhi2(3);      // yha ham eak chracter vector bnaye hai 
+    abhi2.push_back('d');  
+    display(abhi2);
+
+    vector<char>abhi3(abhi2);  // yha ham eak vector se vector bna rhe hai
+    display(abhi2);
+
+    vector<int>abhi4(5,3);  /* yha vector me direct input le rhe hai yha abhi(5 ,3)
+                               ka matlb hai 5 >>> 5 times input lega or 3>> 3 input lega
+                               iska string char kuch v bna skte hai jse niche bnya hai */
+    display(abhi4);
+    
+    vector<string>abhi5(5,"dhananjay nitu");  /* yha vector me direct input le rhe hai yha abhi(5 ,3)
+                               ka matlb hai 5 >>> 5 times input lega or "dhananjay nitu">> dhananjay nitu
+                               input lege or string vector hai  */
+    display(abhi5);
+
+    cout<<abhi5.size()<<endl;
+
     
     return 0;
 }
+
+
+/*
+for more method visit >>>>>  cplusplus.com     <<<<<<
+*/
