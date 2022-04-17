@@ -24,11 +24,16 @@ int main()
     abhi1.push_back(1); // zero size list me input ase lete hai
     abhi1.push_back(3);
     abhi1.push_back(5);
-    abhi1.push_back(7);
+    abhi1.push_back(3);
     abhi1.push_back(9);
     abhi1.push_back(11);
     abhi1.push_back(13);
-    abhi1.pop_back(); // iss se eak element piche se delete kr deta hai
+
+    abhi1.remove(3);  /* ye list me jitna 3 hoga sb ko delete kr dega but niche agr cout se print krge to 
+                         to grabage value dega isliye function se print krna hoga  */
+
+    abhi1.pop_back(); /* iss se eak element piche se delete kr deta hai but cout se print krege to 
+                         last position pe grabage value dega isliye hame function se print krna hoga */
 
     list<int>::iterator jii2;
     jii2 = abhi1.begin();
@@ -54,13 +59,13 @@ int main()
 
     *jii3 = 15; // not zero size list me input ase v le skte hai ya loop chla kr
     jii3++;
-    *jii3 = 25;
-    jii3++;
     *jii3 = 35;
+    jii3++;
+    *jii3 = 55;
     jii3++;
     *jii3 = 45;
     jii3++;
-    *jii3 = 55;
+    *jii3 = 25;
     jii3++;
     *jii3 = 65;
     jii3++;
@@ -85,11 +90,44 @@ int main()
         cin >> *jii4; // ase v list me input le skte hai
     }
 
+    abhi3.remove(9); // agr list ke input me 9 lege to sara 9 remove kr dega
+
     display(abhi3);
 
     abhi3.pop_front(); // ye front se eak element ko delete kr deta hai
 
     display(abhi3);
 
+    abhi3.sort();  // ye pure list ko short kr deta hai 
+    display(abhi3);
+
+    abhi3.merge(abhi2);   // ye 2 list ko merge kr deta hai 
+
+    cout<<"after merging abhi3 to abhi2 :- ";
+    display(abhi3);
+    
+    abhi3.sort();  // ye merge hone ke bad short hua hai
+
+    display(abhi3);
+
+    abhi3.reverse();  // ye list ko reverse kr deta hai 
+    display(abhi3);
+
+    display(abhi1);
+
+    abhi3.swap(abhi1);    // ye dono list ke value ko swap kr deta hai 
+    display(abhi1);
+    cout<<endl;
+    display(abhi3);
+
     return 0;
 }
+
+
+
+/*
+Removing elemenet from list
+>>>abhi.pop_front();
+>>>abhi.pop_back();
+>>>abhi.remove(That element);
+*/
