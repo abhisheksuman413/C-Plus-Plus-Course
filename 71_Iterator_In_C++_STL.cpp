@@ -60,3 +60,26 @@ int main()
 
     return 0;
 }
+
+ /*
+
+     array<int , 5 >abhi4={11,1,2,32,13}
+
+       ITERATORS
+
+    >>begin(); >>> begin point on starting point yha 11 pe point krega
+    >>end();  >>> ye last wale element ke bad wale pe point krega yha ye 13 ke bad wale pe point krega 
+    >>rbegin(); >>> ye last wale element pe point krega yha ye 13 pe point krega 
+    >>rend();  >>> ye start wale element ke phle point krega yha ye 11 ke phle point krega 
+
+     >>>>>>  valuable point of iterator <<<<<<
+
+    >> rbegin ke sath rend ko hi use krna hoga 
+    >> begin ke sath end ko  use krna hoga 
+    >> rebegin ke sath begin ya end ko use nhi kr skte 
+    >> rend ke sath begin ya end ko use nhi kr skte 
+    >> begihn ke sath rbegin ya rend ko use nhi kr skte 
+    >> end ke sath rbegin ya rend ko use nhi kr skte 
+
+
+    */

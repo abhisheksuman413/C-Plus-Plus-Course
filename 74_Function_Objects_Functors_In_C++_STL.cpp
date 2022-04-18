@@ -3,9 +3,13 @@
 #include<algorithm>
 using namespace std;
 
-// void display(int arr[] &su){
-
-// }
+void display(int arr[], int s){
+    for (int i = 0; i < s; i++)
+    {
+        cout<<arr[i]<<" ";
+    }
+    cout<<endl;
+}
 
 int main()
 {
@@ -16,6 +20,8 @@ int main()
     for(int i=0; i<7; i++){
         cout<<arr[i]<<endl;
     }
+    int s = sizeof(arr)/sizeof(arr[0]);
+    display(arr, s);
 
     sort(arr, arr+5);   // arr ka matlb hai arr ko short krega or arr+5 ka matlb hai 5 element hi tak hi krega 
                         // isliye 45 or 3 ko sort nhi kiya 
