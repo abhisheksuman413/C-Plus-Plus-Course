@@ -16,7 +16,7 @@ void display(map<t,t1> &su)
                                                                     or hoga to */
         
     }
-    cout<<"the size is :- "su.size()<<endl;
+    cout<<"the size is :- "<<su.size()<<endl;       
     cout<<"   "<<endl;
 }
 

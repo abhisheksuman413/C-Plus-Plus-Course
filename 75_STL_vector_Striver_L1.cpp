@@ -135,15 +135,35 @@ int main()
     display(abhi7);                                    // diffrent value ke lye for loop use
     abhi7.push_back(vector<int>(20, 5));               // yha abhi7 ka size eak or bda de rhe hai
     display(abhi7);
+    cout<<abhi7[3].size()<<endl;
     abhi7[3].push_back(7);
+    cout<<abhi7[3].size()<<endl;
+    
+
+    cout<<"nitu"<<endl;
+    display(abhi7);
+    cout<<"Dhananjay"<<endl;
 
     // arrays of vector
-    /* vector<int>abhi8[5]={abhi1,abhi2,abhi3,abhi4,abhi5};  >>>>> yha vector ka data type int hai but array
+     vector<int>abhi10[5]={abhi1,abhi2,abhi3,abhi4,abhi5}; /* >>>>> yha vector ka data type int hai but array
                                                                 ke element ka data type vector hai yha array
                                                                 daynamic but yha array ka har element daynamic
                                                                 hai becouse wo vector hai  yha array ka size fix
                                                                 ho ja rha but array ke element ke size ko bda
                                                                 skt e hai  */
+
+    cout<<"abhishek"<<endl;
+    for (auto itt : abhi10)
+    {
+        cout << endl;
+        for (auto pp : itt)
+
+        {
+
+            cout << pp << "  ";
+        }
+    }
+    cout << "Suman"<<endl;
     //  for (int i = 0; i < 5; i++)
     // {
     //     cout << abhi8[i] << " ";
@@ -153,6 +173,18 @@ int main()
     // 3D vector syntax  10 x 20 x 30 vector
     vector<vector<vector<int>>> abhi8(10, vector<vector<int>>(20, vector<int>(30, 5)));
     display(abhi8); // yha v function overlode ho rha hai uper dekhe
+
+    /*  yha asa vetor bna rhe hai jiska size v inpute le rhe hai or element v */
+    int elemenet, size;
+    cout << "enter the size of vector : " << endl;
+    cin >> size;
+    vector<int> abhi9(size);
+    for (int i = 0; i < size; i++)
+    {
+        cout << "Enter the element to add this vector : " << endl;
+        cin >> abhi9[i];
+    }
+    display(abhi9);
 
     return 0;
 }
